@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/pizzaIV"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_margin="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/banner2" />
+
+        <TextView
+            android:id="@+id/pizzaNameTV"
+            android:layout_width="0dp"
+            android:layout_height="19dp"
+            android:maxWidth="171dp"
+            android:text="Ветчина и грибы ывфаолдв"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginHorizontal="22dp"
+            android:autoSizeTextType="none"
+            style="@style/text_grey_dark_bold_16sp"
+            app:layout_constraintStart_toEndOf="@+id/pizzaIV"
+            app:layout_constraintTop_toTopOf="@+id/pizzaIV" />
+
+        <TextView
+            android:id="@+id/pizzaDetailsTV"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_marginEnd="16dp"
+
+            android:text="Ветчина шампиньоны увеличенная порция моцареллы томатный соус"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/pizzaNameTV"
+            app:layout_constraintTop_toBottomOf="@+id/pizzaNameTV" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/rectangle42"
+            app:layout_constraintBottom_toBottomOf="@+id/pizzaIV"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/pizzaPriceTV"
+            android:layout_width="87dp"
+            android:layout_height="32dp"
+            android:text="от 345 р"
+            android:gravity="center"
+            style="@style/text_pink_medium_13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
